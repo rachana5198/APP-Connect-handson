@@ -72,7 +72,7 @@ This is how event driven flows work, scroll down to see some sample flows in Sam
 ![](img/picture15.png)
 
 2.
-  
+
 ![](img/picture16.png)
 
 3.
