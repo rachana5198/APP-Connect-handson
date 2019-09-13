@@ -140,6 +140,30 @@ Give the deatils required for API creation in the pop-up generated on clicking C
 
 ### Import and export flows
 
+###### EXPORT FLOWS
+
+1. To export a flow, go to App Connect dashboard and clock on the flow that you want to export. On clicking, select the option export flow. ```App Connect Dashboard -> Flow -> Export Flow```
+
+![](img/ef1.png)
+
+2. Once you click on that, a yaml file is downloaded with the flow name. In this case, it is ```simple-scheduler.yaml```
+
+![](img/exportflow.png)
+
+###### IMPORT FLOWS
+
+1. To import a flow, clock on New from the right corner of App Connect Dashboard and select import flow. ```App Connect Dashboard -> New -> Import flow```
+
+![](img/if1.png)
+
+2. Drag and drop the .yaml file of the flow that you want to import onto the dashboard of App Connect. ```drag and drop simple-scheduler.yaml -> Import flow```
+
+![](img/if2.png)
+
+3. On finishing the import, you will be able to see a new flow on your App Connect dashboard. Start it to run the flow.
+
+![](img/final.png)
+
 ### Sample flows
 1. Use the For Each node and JSONata to process high-priority issues.
 ![](img/sf1.png)
