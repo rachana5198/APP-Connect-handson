@@ -1,8 +1,11 @@
 # APP-Connect-handson
 
 ### Overview
+
 In this lab, you will create a simple application flow using IBM App Connect. You will create a basic application flow for both event driven flows and flows for API.
+
 ### Steps to register for IBM Cloud
+
 Go to [IBM Cloud](https://cloud.ibm.com/login)
 If you are a existing user, login using your credentials. If you are new user, register for IBM cloud and login.
 ![](img/picture1.png)
@@ -101,6 +104,7 @@ You can auto match the node fields or add them manually. Here, I am adding auto 
 ![](img/picture22.png)
 
 9. Once when all the nodes of the flow are configured, click ```Done``` on the right corner of the screen. This will take you to the previous screen and you can see properties and operations on the screen.
+
 ![](img/picture23.png)
 
 10. Now that the flow creation is done, we have to create an API to call the flow. To do this go to manage section of the dashboard.
@@ -115,8 +119,7 @@ You can auto match the node fields or add them manually. Here, I am adding auto 
 
 ![](img/picture26.png)
 
-13.
-Give the deatils required for API creation in the pop-up generated on clicking Create API. ```Create API -> Fill details -> Done```
+13. Give the details required for API creation in the pop-up generated on clicking Create API. ```Create API -> Fill details -> Done```
 
 ![](img/picture27.png)
 
@@ -137,6 +140,32 @@ Give the deatils required for API creation in the pop-up generated on clicking C
 ![](img/picture31.png)
 
 ### Integration servers with APP connect
+
+1. Click New > Import a BAR file.
+
+![](img/is1.png)
+
+2. Either click the “Import a BAR file” dialog box to select a BAR file from your file system, or drag a BAR file from your file system to the dialog box.
+
+![](img/is2.png)
+
+3. Click Import. An integration server is created, and a tile is added to the dashboard to represent it. Initially, you’ll see the status as “Preparing”, which means that the contents of the BAR file are being unpacked onto the integration server. When preparation has finished, the status will show as “Stopped”, indicating that the integration server is ready to be configured and started. If you see a message saying that preparation failed, click Try again in the message to start preparation again. You can see a summary of the contents of the integration server by clicking the arrow The arrow icon that allows you to see a summary of the contents of an integration server on the tile.
+
+4. Open the integration server by clicking the tile, or expanding the tile menu (⋮) and then clicking Open.
+
+5. Configure the integration server and start it.
+
+6. When you’ve completed configuration, return to the App Connect on IBM Cloud dashboard and start the integration server by opening the tile menu and then clicking Start.
+
+![](img/is3.png)
+
+7. You can also use the tile menu to delete or update the BAR file. The “update” option allows you to upload a new version of a BAR file. On clicking the integration server that you have uploaded, it looks something like this:
+
+![](img/is4.png)
+
+8. When your integration server is running, you can view logs by opening the integration server and then clicking View logs. ```Server page -> View logs```
+
+![](img/is5.png)
 
 ### Import and export flows
 
