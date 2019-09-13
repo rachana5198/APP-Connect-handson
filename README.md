@@ -67,71 +67,72 @@ This is how event driven flows work, scroll down to see some sample flows in Sam
 
 ### Creating flows for API
 
-1.
+1. To create flows for API, launch the App Connect dashboard and click on new then select flows for API. ``` Launch dashboard -> New -> Flows for API ```
 
 ![](img/picture15.png)
 
-2.
+2. On creating, it will take you to the service page. Rename the flow(if needed). Give a name to the flow and click on Create model. ```Enter a model name -> create model```
 
 ![](img/picture16.png)
 
-3.
+3. Add the properties that you want to add to the model that you are creating. Here, I am creating a simple flow that sends emails on sending a API request.
 
 ![](img/picture17.png)
 
-4.
+4. After defining the properties, operations have to be added. Click on operations and select the operation that you want to perform. Here, I am selecting Create demo as operation. ``` Operations -> (scroll down) Create Demo```
 
 ![](img/picture18.png)
 
-5.
+5. Wait for the model to load and then start adding nodes to your flow. I have added a POST method which automatically generated Request and Response nodes. Make sure that the request node has sample data configured in it which is auto-generated. Refresh the page if you are not able to see the changes.
 
 ![](img/picture19.png)
 
-6.
+6. To add nodes to your flow, click on '+' which is in between request and response nodes. Then, add nodes to your flow. Here, I am adding a Gmail node to the flow. ``` + -> Applications -> Gmail -> Create email ```
 
 ![](img/picture20.png)
 
-7.
+7. Configure the email node. If its not connected, click on connect and give access to your account/default account that you want to set up. Check if your node is connected to your account. Refresh the page to see changes and make sure you see your account details when you click on the node.
+You can auto match the node fields or add them manually. Here, I am adding auto matched fields which are the node properties that we have added to the flow in the beginning.
 
 ![](img/picture21.png)
 
-8.
+8. Now configure the response node as well. We can either auto match the node details or give them manually. Here we have given them manually, based on requirement we can auto-match.
 
 ![](img/picture22.png)
 
-9.
-
+9. Once when all the nodes of the flow are configured, click ```Done``` on the right corner of the screen. This will take you to the previous screen and you can see properties and operations on the screen.
 ![](img/picture23.png)
 
-10.
+10. Now that the flow creation is done, we have to create an API to call the flow. To do this go to manage section of the dashboard.
 
 ![](img/picture24.png)
 
-11.
+11. ``` Manage -> Scroll```
 
 ![](img/picture25.png)
 
-12.
+12. On the end of screen, click on create API under Sharing outside of cloud foundry organization. ```Manage -> Sharing Outside Cloud Foundry organization -> Create API```
 
 ![](img/picture26.png)
 
 13.
+Give the deatils required for API creation in the pop-up generated on clicking Create API. ```Create API -> Fill details -> Done```
 
 ![](img/picture27.png)
 
-14.
+14. Refresh the page. Start the flow by clicking Start from right corner of the screen.```Manage -> Start API``` and then click on the API link from ```Manage -> Sharing Outside Cloud Foundry organization -> Click API link```. This will redirect you to the API page.
 
 ![](img/picture28.png)
 
-15.
+15. CLick on ```Try it``` from the right corner which will generate automatic data.
 
 ![](img/picture29.png)
 
-16.
+16. To test the API call, click on ```Call Operation```.
 
 ![](img/picture30.png)
 
-17.
+17. To check if the API is working, go the email that you have set in the configuration flow. It will look something like this:
 
 ![](img/picture31.png)
 
