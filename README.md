@@ -1,15 +1,16 @@
 # APP-Connect-handson
 
-### Overview
+## Overview
 
 In this lab, you will create a simple application flow using IBM App Connect. You will create a basic application flow for both event driven flows and flows for API.
 
-### Steps to register for IBM Cloud
+## [Steps to register for IBM Cloud](https://github.com/rachana5198/APP-Connect-handson#steps-to-register-for-ibm-cloud)
 
 Go to [IBM Cloud](https://cloud.ibm.com/login)
 If you are a existing user, login using your credentials. If you are new user, register for IBM cloud and login.
 ![](img/picture1.png)
-### Setup an APP Connect service
+
+## [Setup an APP Connect service](https://github.com/rachana5198/APP-Connect-handson#setup-an-app-connect-service)
 1. Lets go to [IBM Cloud Catalog](https://cloud.ibm.com/catalog) and search for App Connect.
 
 ![](img/picture2.png)
@@ -26,7 +27,7 @@ If you are a existing user, login using your credentials. If you are new user, r
 
 ![](img/picture5.png)
 
-### Creating event driven flows
+## [Creating event driven flows](https://github.com/rachana5198/APP-Connect-handson#creating-event-driven-flows)
 
 1. After launching the dashboard, click on New. (Rename your flow, if needed)
 To create a new event driven flow, ```New -> Event-driven flow```
@@ -68,7 +69,7 @@ To connect your account, ```Click on gmail node -> Connect```. This will redirec
 
 This is how event driven flows work, scroll down to see some sample flows in Sample flows section.
 
-### Creating flows for API
+## [Creating flows for API](https://github.com/rachana5198/APP-Connect-handson#creating-flows-for-api)
 
 1. To create flows for API, launch the App Connect dashboard and click on new then select flows for API. ``` Launch dashboard -> New -> Flows for API ```
 
@@ -139,7 +140,7 @@ You can auto match the node fields or add them manually. Here, I am adding auto 
 
 ![](img/picture31.png)
 
-### Integration servers with APP connect
+## [Integration servers with APP connect](https://github.com/rachana5198/APP-Connect-handson#integration-servers-with-app-connect)
 
 1. Click New > Import a BAR file.
 
@@ -167,9 +168,9 @@ You can auto match the node fields or add them manually. Here, I am adding auto 
 
 ![](img/is5.png)
 
-### Import and export flows
+## [Import and export flows](https://github.com/rachana5198/APP-Connect-handson#import-and-export-flows)
 
-###### EXPORT FLOWS
+#### EXPORT FLOWS
 
 1. To export a flow, go to App Connect dashboard and clock on the flow that you want to export. On clicking, select the option export flow. ```App Connect Dashboard -> Flow -> Export Flow```
 
@@ -179,7 +180,7 @@ You can auto match the node fields or add them manually. Here, I am adding auto 
 
 ![](img/exportflow.png)
 
-###### IMPORT FLOWS
+#### IMPORT FLOWS
 
 1. To import a flow, clock on New from the right corner of App Connect Dashboard and select import flow. ```App Connect Dashboard -> New -> Import flow```
 
@@ -193,7 +194,7 @@ You can auto match the node fields or add them manually. Here, I am adding auto 
 
 ![](img/final.png)
 
-### Sample flows
+## [Sample flows](https://github.com/rachana5198/APP-Connect-handson#sample-flows)
 1. Use the For Each node and JSONata to process high-priority issues.
 ![](img/sf1.png)
 2. Create new leads in ```Marketo``` by capturing lead names and details in ```Slack```
