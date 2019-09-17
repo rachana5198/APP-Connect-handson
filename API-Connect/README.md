@@ -53,7 +53,7 @@ We will use the Microgateway as a local test server.
 Here we should have successfully installed the IBM API Connect.
 Once the toolkit is installed,You can verify this by entering the following command on the command-line:
 
-![](img/picture3.png)
+![](img/Picture3.png)
 
 ## Let us now move to the objective of this hands on.
 
@@ -61,14 +61,14 @@ Once the toolkit is installed,You can verify this by entering the following comm
 To create a LoopBack project using the API Connect toolkit command line, complete the following steps:
 1) From the command-line interface, enter the following commands. It is used to create and manage LoopBack applications.
 
-![](img/picture4.png)
+![](img/Picture4.png)
 
 For this session we will create a project called ```weather-data```
-![](img/picture5.png)
+![](img/Picture5.png)
 
 This process creates a node_modules directory and might take some time.
 An empty LoopBack project contains the following directories:
-![](img/picture6.png)
+![](img/Picture6.png)
 
 ## ADD A NEW DATA SOURCE AND MODEL
 To add a new model and data source to a LoopBack project using the API Designer, complete the following steps:
@@ -79,52 +79,52 @@ To add a new data source to a LoopBack project using the API Designer, complete 
 2) From the command line, enter the following command:```apic edit```
 After a brief pause, the console displays this message:
 
-![](img/picture7.png)
+![](img/Picture7.png)
 The API Designer opens in your default web browser, initially displaying the login page if you haven't logged in recently.
-![](img/picture8.png)
+![](img/Picture8.png)
 
 3)Login using your IBM Cloud credentials
-![](img/picture9.png)
+![](img/Picture9.png)
 
-4)Click the Data Sources icon ![](img/picture10.png)
-![](img/picture11.png)
+4)Click the Data Sources icon ![](img/Picture10.png)
+![](img/Picture11.png)
 
 5) Click Add. The New LoopBack Data Source window opens.
 
 6) Enter ```weatherDS``` in the Name text field
-![](img/picture12.png)
+![](img/Picture12.png)
 
 7) Click New
 
 8) By default, the Connector setting shows In-memory db and the other settings are blank. Keep the default settings for now, and API Designer automatically saves the new data source.
-![](img/picture13.png)
+![](img/Picture13.png)
 
-9) Click the Test Connection icon ![](img/picture14.png) to test the data source connection. The message "Data source connection test succeeded" is displayed.
-![](img/picture15.png)
+9) Click the Test Connection icon ![](img/Picture14.png) to test the data source connection. The message "Data source connection test succeeded" is displayed.
+![](img/Picture15.png)
 
 10) Click ```All Data Sources``` The data source will appear in the list of data sources, and the editor updates the server/datasources.json file with settings for the new data source.
- ![](img/picture16.png)
+ ![](img/Picture16.png)
 
 ## Add a model
 To add a new model to a LoopBack project using the API Designer, complete the following steps:
 
-1) Click the Models icon![](img/picture19.png) \
+1) Click the Models icon![](img/Picture19.png) \
 2) Click Add. The New LoopBack Model window opens. \
 3) Enter weather in the Name text field, then click New.
-![](img/picture17.png)
+![](img/Picture17.png)
 4) In the Data Source field, select ```weatherDS```
-![](img/picture18.png)
+![](img/Picture18.png)
 5) In the Properties, click the Add property icon . \
 6) In the Property Name text field, enter zip_code. \
 7) For Type, select number. \
 8) Select Required to make the property required. This means that it must have a value when you add or update a model instance. \
 9) Select ID to ensure that the property has a unique identifier. For now, keep the default values for the other settings:
-![](img/picture20.png)
+![](img/Picture20.png)
 
-10) Click the Add property icon![](img/picture21.png) again to add another property. Reference the table below to complete the remaining properties:
-![](img/picture22.png)
+10) Click the Add property icon![](img/Picture21.png) again to add another property. Reference the table below to complete the remaining properties:
+![](img/Picture22.png)
 
-11) Click the Save icon to save your changes![](img/picture23.png)
+11) Click the Save icon to save your changes![](img/Picture23.png)
 
 12) Click All Models to finish editing the model.
 This completes adding a new data source and model to the weather-data LoopBack project.
