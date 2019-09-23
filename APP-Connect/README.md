@@ -8,31 +8,29 @@ In this lab, you will create a simple application flow using IBM App Connect. Yo
 
 Go to [IBM Cloud](https://cloud.ibm.com/login)
 If you are a existing user, login using your credentials. If you are new user, register for IBM cloud and login.
-![](img/picture1.png)
+![](img/cloudlogin.png)
 
 ## [Setup an APP Connect service](https://github.com/rachana5198/APP-Connect-handson#setup-an-app-connect-service)
 1. Lets go to [IBM Cloud Catalog](https://cloud.ibm.com/catalog) and search for App Connect.
 
-![](img/picture2.png)
+![](img/catalogsearch.png)
 
 2. Click on the service App Connect to instantiate it on IBM cloud.
 
-![](img/picture3.png)
-
 3. Click on ```create```
 
-![](img/picture4.png)
+![](img/instancecreation.png)
 
 4. Launch the service by clicking ```Launch App Connect```
 
-![](img/picture5.png)
+![](img/launch.png)
 
 ## [Creating event driven flows](https://github.com/rachana5198/APP-Connect-handson#creating-event-driven-flows)
 
 1. After launching the dashboard, click on New. (Rename your flow, if needed)
 To create a new event driven flow, ```New -> Event-driven flow```
 
-![](img/picture6.png)
+![](img/newflow.png)
 
 2. To add applications to your flow, Click on '+' and select applications that you want to add to your flow. Here, we are creating a simple flow to send emails at some interval of time.
 
@@ -40,32 +38,40 @@ To create a new event driven flow, ```New -> Event-driven flow```
 
 3. To be able to schedule events, there is a tool called scheduler in the toolbox. To add this to your flow, ```+ -> Toolbox -> Scheduler```
 
-![](img/picture8.png)
+![](img/scheduler.png)
 
-4. Configure the scheduler component according to your preferences. Here I am creating a flow that sends email for every one minute.
+4. Configure the scheduler component according to your preferences. Here I am creating a flow that sends slack message for every one minute.
 
-![](img/picture9.png)
+![](img/plus.png)
 
-5. To add the next node to the flow, click on '+'. Here, we are adding email component so that we will be able to send emails at scheduled time. To do this, ```+ -> Applications -> Gmail -> Create email```
+5. To add the next node to the flow, click on '+'. Here, we are adding email component so that we will be able to send emails at scheduled time. To do this, ```+ -> Applications -> Slack -> Create email```
 
-![](img/picture10.png)
+![](img/slack.png)
 
 6. Connect the account using which you want to automate this task(preferably your gmail account).
-To connect your account, ```Click on gmail node -> Connect```. This will redirect you to gmail login page, finish the login and permissions and refresh the IBM App connect page, then you should be able to see your account in the drop down.
+To connect your account, ```Click on Slack node -> Connect```. This will redirect you to gmail login page, finish the login and permissions and refresh the IBM App connect page, then you should be able to see your account in the drop down.
 
-![](img/picture11.png)
+![](img/connect.png)
 
-7. Configure the email node with your details and content.
+7. Configure the slack node with your details and content.
 
-![](img/picture12.png)
+![](img/slack1.png)
+
+  Click allow
+
+![](img/slackallow.png)
+
+  Enter details in the slack nodes
+
+![](img/configure.png)
 
 8. To start the flow, click start from the right corner of the screen.
 
-![](img/picture13.png)
+![](img/starteflow.png)
 
-9. Once the flow starts and the dashboard shows the status 'Running' that means the event flow has started. To cross check, go to your email and see if there is a new email.
+9. Once the flow starts and the dashboard shows the status 'Running' that means the event flow has started. To cross check, go to your Slack and see if there is a new message.
 
-![](img/picture14.png)
+![](img/outputeflow.png)
 
 This is how event driven flows work, scroll down to see some sample flows in Sample flows section.
 
