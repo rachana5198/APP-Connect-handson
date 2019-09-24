@@ -34,8 +34,6 @@ To create a new event driven flow, ```New -> Event-driven flow```
 
 2. To add applications to your flow, Click on '+' and select applications that you want to add to your flow. Here, we are creating a simple flow to send emails at some interval of time.
 
-![](img/picture7.png)
-
 3. To be able to schedule events, there is a tool called scheduler in the toolbox. To add this to your flow, ```+ -> Toolbox -> Scheduler```
 
 ![](img/scheduler.png)
@@ -115,8 +113,6 @@ You can auto match the node fields or add them manually. Here, I am adding auto 
 ![](img/response.png)
 
 10. Now that the flow creation is done, we have to create an API to call the flow. To do this go to manage section of the dashboard.
-
-![](img/picture24.png)
 
 11. ``` Manage -> Scroll```
 
